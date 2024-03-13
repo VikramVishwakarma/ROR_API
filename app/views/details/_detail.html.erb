@@ -1,0 +1,57 @@
+<div id="<%= dom_id detail %>" class="detail-container">
+  <p>
+    <strong>Name:</strong>
+    <%= detail.name %>
+  </p>
+
+  <p>
+    <strong>Release date:</strong>
+    <%= detail.release_date %>
+  </p>
+
+  <p>
+    <strong>Main actor:</strong>
+    <%= detail.main_actor %>
+  </p>
+
+  <p>
+    <strong>Director:</strong>
+    <%= detail.director %>
+  </p>
+
+  <p>
+    <strong>Genres:</strong>
+    <%= detail.genres %>
+  </p>
+
+  <hr class="divider">
+
+  <p>
+    <strong>Created at:</strong>
+    <%= detail.created_at %>
+  </p>
+
+  <p>
+    <strong>Updated at:</strong>
+    <%= detail.updated_at %>
+  </p>
+</div>
+
+</div>
+<style>
+.detail-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; /* Change background color here */
+}
+
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
