@@ -65,6 +65,6 @@ class DetailsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def detail_params
-      params.require(:detail).permit(:name, :release_date, :main_actor, :director, :genres, :created_on, :updated_on)
+      params.require(:detail).permit(:name, :release_date, :main_actor, :director, :genres)
     end
 end

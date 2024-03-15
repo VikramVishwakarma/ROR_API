@@ -9,4 +9,16 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   root "details#index"
+  
+  
+  namespace :api do
+    namespace :v1 do
+      get '/details', to: 'details#index'
+      post '/details', to: 'details#create'
+      get '/details/:id', to: 'details#show'
+      patch '/details/:id', to: 'details#update'
+      delete '/details/:id', to: 'details#destroy'
+    end
+  end
+  
 end
